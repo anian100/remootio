@@ -1,4 +1,6 @@
 """Utility methods for the Remootio integration."""
+from __future__ import annotations
+
 import asyncio
 import logging
 from logging import Logger
@@ -42,8 +44,8 @@ async def _check_sensor_installed(
             raise UnsupportedRemootioDeviceError
 
         _LOGGER.error(
-            "Your Remootio device isn't supported, possibly because it hasn't a sensor installed. IP [%s]",
-            remootio_client.ip_address,
+            "Your Remootio device isn't supported, possibly because it hasn't a sensor installed. Host [%s]",
+            remootio_client.host,
         )
 
 
@@ -72,7 +74,7 @@ async def create_client(
     hass: core.HomeAssistant,
     connection_options: ConnectionOptions,
     logger: Logger,
-    expected_serial_number: str = None,
+    expected_serial_number: str | None = None,
 ) -> RemootioClient:
     """Create an Remootio client based on the given data."""
     result: RemootioClient = None

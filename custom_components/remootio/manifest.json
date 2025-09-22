@@ -1,14 +1,14 @@
 {
   "domain": "remootio",
-  "name": "Remootio Smart Garage Door Opener",
+  "name": "Remootio Smart Garage Door Opener - Custom",
   "integration_type": "device",
   "config_flow": true,
-  "documentation": "https://github.com/peaceduck/remootio",  
+  "documentation": "https://github.com/anian100/remootio",  
   "version": "2.0.2",
-  "requirements": ["aioremootio @ git+https://github.com/peaceduck/aioremootio"],
+  "requirements": ["aioremootio @ git+https://github.com/anian100/remootio"],
   "ssdp": [],
   "homekit": {},
   "dependencies": [],
-  "codeowners": ["@peaceduck"],
+  "codeowners": ["@anian100"],
   "iot_class": "local_push"
 }

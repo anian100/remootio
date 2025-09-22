@@ -4,7 +4,7 @@
   "integration_type": "device",
   "config_flow": true,
   "documentation": "https://github.com/anian100/remootio",  
-  "version": "2.0.3",
+  "version": "3.0.0",
   "requirements": ["aioremootio @ git+https://github.com/anian100/remootio"],
   "ssdp": [],
   "homekit": {},

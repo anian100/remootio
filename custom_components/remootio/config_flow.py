@@ -98,7 +98,7 @@ async def validate_input(hass: HomeAssistant, data: dict[str, Any]) -> dict[str,
 class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     """Handle a config flow for Remootio."""
 
-    VERSION = 2
+    VERSION = 1
 
     def __init__(self) -> None:
         """Initialize the class."""

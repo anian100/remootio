@@ -115,6 +115,10 @@ class RemootioCover(cover.CoverEntity):
         """Open the Remootio controlled garage door or gate."""
         await self._remootio_client.trigger()
 
+    async def async_close_cover(self, **kwargs):
+        """Open the Remootio controlled garage door or gate."""
+        await self._remootio_client.trigger()
+
 
 class RemootioCoverStateChangeListener(Listener[StateChange]):
     """Listener to be invoked when Remootio controlled garage door or gate changes its state."""
